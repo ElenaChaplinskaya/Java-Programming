@@ -8,10 +8,25 @@ public class Application {
         enterInteger();
         enterFractional();
         enterName();
-        squaring(5);
-        average(5, 6);
-        newAverage(1.5, 2.5, 3.0);
-        random();
+
+        int result = squaring();
+        System.out.println(result);
+
+
+        System.out.print("Введите первое число: ");
+        Scanner scanner1 = new Scanner(System.in);
+        int number1 = scanner1.nextInt();
+        System.out.print("Введите второе число: ");
+        Scanner scanner2 = new Scanner(System.in);
+        int number2 = scanner2.nextInt();
+        System.out.print("Среднее арифметическое: ");
+        double result1 = average(number1, number2);
+        System.out.println(result1);
+
+        double result2 = average();
+        System.out.println(result2);
+
+        System.out.println(random());
 
 
     }
@@ -40,28 +55,39 @@ public class Application {
         return name;
     }
 
-    public static int squaring(int number) {
-        int result = number * number;
-        System.out.println(result);
-        return result;
+    public static int squaring() {
+        System.out.print("Введите число: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.print("Квадрат числа: ");
+        return number * number;
     }
 
     public static double average(int number1, int number2) {
-        double result = (double) (number1 + number2) / 2;
-        System.out.println(result);
-        return result;
+        return (double) (number1 + number2) / 2;
     }
 
-    public static double newAverage(double number1, double number2, double number3) {
-        double result = (number1 + number2 + number3) / 3;
-        System.out.println(result);
-        return result;
+    public static double average() {
+        System.out.print("Введите первое число: ");
+        Scanner scanner1 = new Scanner(System.in);
+        double number1 = scanner1.nextDouble();
+        System.out.print("Введите второе число: ");
+        Scanner scanner2 = new Scanner(System.in);
+        double number2 = scanner2.nextDouble();
+        System.out.print("Введите третье число: ");
+        Scanner scanner3 = new Scanner(System.in);
+        double number3 = scanner3.nextDouble();
+        System.out.print("Среднее арифметическое: ");
+        return (number1 + number2 + number3) / 3;
+
     }
 
     public static int random() {
+        System.out.print("Определите конец диапазона: ");
+        Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.print("Ваше число: ");
         Random random = new Random();
-        int result = random.nextInt(50);
-        System.out.println(result);
-        return result;
+        return random.nextInt(number);
     }
 }
