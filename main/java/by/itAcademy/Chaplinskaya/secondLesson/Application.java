@@ -5,46 +5,49 @@ import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
-        enterInteger();
-        enterFractional();
+
+        System.out.print("Введите целое число: ");
+        System.out.println("Ваше число: " + enterInteger());
+
+        System.out.print("Введите дробное число: ");
+        System.out.println("Ваше число: " + enterFractional());
+
         enterName();
 
-        int result = squaring();
-        System.out.println(result);
-
+        System.out.print("Введите число: ");
+        int num = enterInteger();
+        System.out.println(squaring(num));
 
         System.out.print("Введите первое число: ");
-        Scanner scanner1 = new Scanner(System.in);
-        int number1 = scanner1.nextInt();
+        int num1 = enterInteger();
         System.out.print("Введите второе число: ");
-        Scanner scanner2 = new Scanner(System.in);
-        int number2 = scanner2.nextInt();
-        System.out.print("Среднее арифметическое: ");
-        double result1 = average(number1, number2);
-        System.out.println(result1);
+        int num2 = enterInteger();
+        System.out.println(average(num1, num2));
 
-        double result2 = average();
-        System.out.println(result2);
+        System.out.print("Введите первое число: ");
+        double num3 = enterFractional();
+        System.out.print("Введите второе число: ");
+        double num4 = enterFractional();
+        System.out.print("Введите третье число: ");
+        double num5 = enterFractional();
+        System.out.println(average(num3, num4, num5));
 
-        System.out.println(random());
+
+        System.out.print("Определите конец диапазона:");
+        int random = enterInteger();
+        System.out.println(random(random));
 
 
     }
 
     public static int enterInteger() {
-        System.out.print("Введите целое число: ");
         Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.println("Ваше число: " + number);
-        return number;
+        return scanner.nextInt();
     }
 
     public static double enterFractional() {
-        System.out.print("Введите дробное число: ");
         Scanner scanner = new Scanner(System.in);
-        double number = scanner.nextDouble();
-        System.out.println("Ваше число: " + number);
-        return number;
+        return scanner.nextDouble();
     }
 
     public static String enterName() {
@@ -55,38 +58,24 @@ public class Application {
         return name;
     }
 
-    public static int squaring() {
-        System.out.print("Введите число: ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.print("Квадрат числа: ");
+    public static int squaring(int number) {
+        System.out.println("Квадрат числа: ");
         return number * number;
     }
 
     public static double average(int number1, int number2) {
+        System.out.println("Среднее арифметическое: ");
         return (double) (number1 + number2) / 2;
     }
 
-    public static double average() {
-        System.out.print("Введите первое число: ");
-        Scanner scanner1 = new Scanner(System.in);
-        double number1 = scanner1.nextDouble();
-        System.out.print("Введите второе число: ");
-        Scanner scanner2 = new Scanner(System.in);
-        double number2 = scanner2.nextDouble();
-        System.out.print("Введите третье число: ");
-        Scanner scanner3 = new Scanner(System.in);
-        double number3 = scanner3.nextDouble();
-        System.out.print("Среднее арифметическое: ");
+    public static double average(double number1, double number2, double number3) {
+        System.out.println("Среднее арифметическое: ");
         return (number1 + number2 + number3) / 3;
 
     }
 
-    public static int random() {
-        System.out.print("Определите конец диапазона: ");
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        System.out.print("Ваше число: ");
+    public static int random(int number) {
+        System.out.println("Ваше число: ");
         Random random = new Random();
         return random.nextInt(number);
     }
