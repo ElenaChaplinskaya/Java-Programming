@@ -29,7 +29,7 @@ public class App {
                 triangle(a, b, c);
                 break;
             case 3:
-                week();
+                System.out.println(week());
                 break;
             default:
                 System.out.println("Вы сделали не правильный выбор!");
@@ -51,49 +51,43 @@ public class App {
 
     public static void triangle(int a, int b, int c) {
 
-        if (a < b + c) {
-            if (b < a + c) {
-                if (c < a + b) {
-                    System.out.println("Треугольник существует!");
-                } else {
-                    System.out.println("Треугольник не существует!");
-                }
-            } else {
-                System.out.println("Треугольник не существует!");
-            }
+        if ((a < b + c) && (b < a + c) && (c < a + b)) {
+            System.out.println("Треугольник существует!");
         } else {
             System.out.println("Треугольник не существует!");
         }
     }
 
-    public static void week() {
+    public static String week() {
         Calendar calendar = Calendar.getInstance();
         int dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+        String nameDay = "";
         switch (dayOfWeek) {
             case 1:
-                System.out.println("Воскресенье");
+                nameDay = "Воскресенье";
                 break;
             case 2:
-                System.out.println("Понедельник");
+                nameDay = "Понедельник";
                 break;
             case 3:
-                System.out.println("Вторник");
+                nameDay = "Вторник";
                 break;
             case 4:
-                System.out.println("Среда");
+                nameDay = "Среда";
                 break;
             case 5:
-                System.out.println("Четверг");
+                nameDay = "Четверг";
                 break;
             case 6:
-                System.out.println("Пятница");
+                nameDay = "Пятница";
                 break;
             case 7:
-                System.out.println("Суббота");
+                nameDay = "Суббота";
                 break;
             default:
                 System.out.println("Такого дня недели не существует");
         }
+        return nameDay;
     }
 }
 
