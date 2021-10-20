@@ -18,7 +18,6 @@ public class App {
 
         switch (number) {
             case 1:
-
                 enterNum();
                 break;
             case 2:

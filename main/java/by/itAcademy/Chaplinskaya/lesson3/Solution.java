@@ -19,9 +19,9 @@ public class Solution {
 
     public int[] twoSum(int[] nums, int target) {
         int[] mas = new int[2];
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < nums.length; i++) {
             int x = nums[i];
-            for (int j = i + 1; j < 4; j++) {
+            for (int j = i + 1; j < nums.length; j++) {
                 int y = nums[j];
                 if (x + y == target) {
                     mas[0] = i;
