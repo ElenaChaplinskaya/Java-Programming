@@ -8,7 +8,13 @@ public class App {
         System.out.print("Введите целое число: ");
         int number = enterInteger();
         System.out.println(getSumNumber(number));
-        simpleNumber(number);
+
+        if (simpleNumber(number)) {
+            System.out.println("Число простое");
+        } else {
+            System.out.println("Число составное");
+        }
+
         System.out.println(evenNumber(number));
         subsequence();
         System.out.println(factorial(number));
@@ -26,7 +32,7 @@ public class App {
         return sum;
     }
 
-    public static void simpleNumber(int num) {
+    public static boolean simpleNumber(int num) {
         int count = 0;
         for (int i = 1; i <= num; i++) {
             if (num % i == 0) {
@@ -34,10 +40,11 @@ public class App {
             }
         }
         if (count <= 2) {
-            System.out.println("Число простое");
+            return true;
         } else {
-            System.out.println("Число составное");
+            return false;
         }
+
     }
 
     public static String evenNumber(int num) {
@@ -46,13 +53,12 @@ public class App {
         return answer;
     }
 
-    public static int subsequence() {
+    public static void subsequence() {
         int num = 90;
         for (int i = 90; i >= 0; i = i - 5) {
-            System.out.println(num);
             num -= 5;
+            System.out.println(num);
         }
-        return num;
     }
 
     public static int factorial(int num) {
