@@ -1,7 +1,5 @@
 package by.itAcademy.Chaplinskaya.lesson7;
 
-import java.util.Locale;
-import java.util.regex.Pattern;
 
 public class Application {
     public static void main(String[] args) {
@@ -77,11 +75,19 @@ public class Application {
         return count;
     }
 
-    public static void newText(String x) { // задание еще в процессе
-      String[] subStr=x.split("[, ]"); // Из текста делаю новый массив,чтобы от каждого элемента массива оторвать последнюю букву. Но не могу подобрать регул выражение,которое уберет мне запятые и пробелы.
-      for(String str:subStr){
-          System.out.println(str);
-      }
+    public static void newText(String x) {
+        String[] subStr = x.split("\\s+|,\\s* ");
+        for (String str : subStr) {
+            System.out.println(str);
+        }
+        for (int i = 0; i < subStr.length; i++) {
+            String element = subStr[i];
+            char literal = element.charAt(element.length() - 1);
+            System.out.print(literal);
+        }
     }
 }
+
+
+
 
