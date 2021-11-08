@@ -39,13 +39,7 @@ public class Application {
     }
 
     public static void position(String x, String y) {
-        int i = x.indexOf(y);
-        int d = y.length();
-        while (d > 0) {
-            System.out.print(i + " ");
-            d--;
-            i++;
-        }
+        System.out.println(x.indexOf(y));
     }
 
     public static void changeSymbol(String x) {
