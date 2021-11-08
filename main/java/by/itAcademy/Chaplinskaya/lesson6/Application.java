@@ -4,7 +4,7 @@ import java.util.Random;
 
 import static by.itAcademy.Chaplinskaya.lesson5.Application.printArray;
 import static by.itAcademy.Chaplinskaya.lesson6.Customer.ageCustomer;
-import static by.itAcademy.Chaplinskaya.secondLesson.Application.enterInteger;
+import static by.itAcademy.Chaplinskaya.lesson2.Application.enterInteger;
 
 
 public class Application {
