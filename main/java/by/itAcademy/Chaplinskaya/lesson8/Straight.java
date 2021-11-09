@@ -1,14 +1,19 @@
 package by.itAcademy.Chaplinskaya.lesson8;
 
 public class Straight extends Figures {
+    private int a;
+    private int b;
 
-
-    public int square(int a, int b){
-        return super.square(a,b);
+    public Straight(int a, int b) {
+        this.a = a;
+        this.b = b;
     }
 
-    @Override
-    public int perimeter(int a, int b) {
-        return super.perimeter(a, b);
+    public int square() {
+        return a * b;
+    }
+
+    public int perimeter() {
+        return a * 2 + b * 2;
     }
 }

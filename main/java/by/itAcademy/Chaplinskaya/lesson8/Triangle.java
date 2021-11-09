@@ -1,15 +1,22 @@
 package by.itAcademy.Chaplinskaya.lesson8;
 
-public class Triangle extends Figures{
-    int c=1;
+public class Triangle extends Figures {
+    private int a;
+    private int b;
+    private int c;
 
-    @Override
-    public int square(int a, int b) {
-        return super.square(a, b)/2;
+    public Triangle(int a, int b, int c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
-    @Override
-    public int perimeter(int a, int b) {
-        return a+b+c;
+    public int square() {
+        return a * b / 2;
+    }
+
+    public int perimeter() {
+        return a + b + c;
     }
 }
+
