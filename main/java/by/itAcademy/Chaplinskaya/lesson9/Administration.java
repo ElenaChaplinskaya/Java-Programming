@@ -1,12 +1,15 @@
 package by.itAcademy.Chaplinskaya.lesson9;
 
-public class Administration extends Workers{
+public class Administration extends Fabric {
 
     private int numberOfHoursWorked;
+    private double salInHour;
 
-    public Administration(String fullName, String position, String typeOfSalary) {
+
+    public Administration(String fullName, String position, String typeOfSalary, double salInHour, int numberOfHoursWorked) {
         super(fullName, position, typeOfSalary);
         this.numberOfHoursWorked = numberOfHoursWorked;
+        this.salInHour = salInHour;
     }
 
     public int getNumberOfHoursWorked() {
@@ -17,8 +20,18 @@ public class Administration extends Workers{
         this.numberOfHoursWorked = numberOfHoursWorked;
     }
 
-    @Override
-    public int payroll(int numberOfHoursWorked) {
-return x;
+    public double getSalInHour() {
+        return salInHour;
     }
+
+    public void setSalInHour(double salInHour) {
+        this.salInHour = salInHour;
+    }
+
+@Override
+    public double getSalaryPerson() {
+        return getNumberOfHoursWorked()*getSalInHour();
+
+    }
+
 }

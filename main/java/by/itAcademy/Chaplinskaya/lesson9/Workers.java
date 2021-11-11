@@ -1,51 +1,34 @@
 package by.itAcademy.Chaplinskaya.lesson9;
 
-public abstract class Workers {
+public class Workers extends Fabric {
 
-    private String fullName;
-    private String position;
-    private String typeOfSalary;
-    private int salary;
+    private int numberOfProduct;
+    private double pieceRate;
 
-    public Workers(String fullName, String position, String typeOfSalary){
-        this.fullName= fullName;
-        this.position= position;
-        this.typeOfSalary= typeOfSalary;
+    public Workers(String fullName, String position, String typeOfSalary, int numberOfProduct, double pieceRate) {
+        super(fullName, position, typeOfSalary);
+        this.numberOfProduct = numberOfProduct;
+        this.pieceRate = pieceRate;
     }
 
-    public String getFullName() {
-        return fullName;
+    public int getNumberOfProduct() {
+        return numberOfProduct;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setNumberOfProduct(int numberOfProduct) {
+        this.numberOfProduct = numberOfProduct;
     }
 
-    public String getPosition() {
-        return position;
+    public double getPieceRate() {
+        return pieceRate;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setPieceRate(double pieceRate) {
+        this.pieceRate = pieceRate;
     }
 
-    public String getTypeOfSalary() {
-        return typeOfSalary;
-    }
-
-    public void setTypeOfSalary(String typeOfSalary) {
-        this.typeOfSalary = typeOfSalary;
-    }
-
-    public String getSalary() {
-        return salary;
-    }
-
-    public void setSalary(String salary) {
-        this.salary = salary;
-    }
-
-    public int payroll(int number){
-        return salary;
+    @Override
+    public double getSalaryPerson() {
+        return numberOfProduct*pieceRate;
     }
 }
