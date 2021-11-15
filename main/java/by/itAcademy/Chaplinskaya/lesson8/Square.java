@@ -1,7 +1,5 @@
 package by.itAcademy.Chaplinskaya.lesson8;
 
-import static java.lang.System.*;
-
 public class Square extends Figures {
     int a;
 
