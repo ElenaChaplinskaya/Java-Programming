@@ -1,13 +1,16 @@
 package by.itAcademy.Chaplinskaya.lesson8;
 
-public class Figures {
+public abstract class Figures {
 
-    public int square(int a, int b) {
-        return a * b;
+    private int s;
+    private int p;
+
+    public int square() {
+        return s;
     }
 
-    public int perimeter(int a, int b) {
-        return a * 2 + b * 2;
+    public int perimeter() {
+        return p;
     }
 }
 

@@ -3,13 +3,18 @@ package by.itAcademy.Chaplinskaya.lesson8;
 import static java.lang.System.*;
 
 public class Square extends Figures {
+    int a;
 
-    public int square(int a, int b) {
-     return super.square(a,b);
+    public Square(int a) {
+        this.a = a;
     }
 
-    @Override
-    public int perimeter(int a, int b) {
-       return super.perimeter(a, b);
+    public int square() {
+        return a * a;
     }
+
+    public int perimeter() {
+        return a * 4;
+    }
+
 }
