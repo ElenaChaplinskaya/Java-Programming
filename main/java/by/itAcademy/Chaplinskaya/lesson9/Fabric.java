@@ -39,31 +39,7 @@ public abstract class Fabric {
         this.typeOfSalary = typeOfSalary;
     }
 
-
-
-
-
-
-
-
-
     public abstract double getSalaryPerson();
 
-
-
-//       double salary = 0;
-//        switch (typeOfSalary) {  // как свитч узнает тип моей зп?
-//            case 1:
-//                double hourlyWage = hours * salInHour;
-//                break;
-//            case 2:
-//                double piecework = numberOfProduct * pieceRate;
-//                break;
-//            default:
-//                if (numberOfProduct > 1000) {
-//                    double mixed = numberOfProduct * pieceRate * 0.3;
-//                }
-//        }
-//        return salary;
 
 }
