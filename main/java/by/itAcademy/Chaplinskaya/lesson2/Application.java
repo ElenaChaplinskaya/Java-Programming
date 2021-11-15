@@ -1,4 +1,4 @@
-package by.itAcademy.Chaplinskaya.secondLesson;
+package by.itAcademy.Chaplinskaya.lesson2;
 
 import java.util.Random;
 import java.util.Scanner;

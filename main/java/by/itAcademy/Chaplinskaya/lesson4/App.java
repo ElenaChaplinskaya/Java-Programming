@@ -1,6 +1,6 @@
 package by.itAcademy.Chaplinskaya.lesson4;
 
-import static by.itAcademy.Chaplinskaya.secondLesson.Application.enterInteger;
+import static by.itAcademy.Chaplinskaya.lesson2.Application.enterInteger;
 
 public class App {
     public static void main(String[] args) {
