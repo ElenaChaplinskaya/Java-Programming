@@ -4,11 +4,9 @@ public enum Sizes {
     XXS(32) {
         @Override
         public String getDescription() {
-            String s = null;
-            if (euroSize == 32) {
-                s = "Детский размер";
-            }
-            return s;
+
+            return "Детский размер";
+
         }
     }, XS(34), S(36), M(38), L(40);
 
@@ -19,10 +17,8 @@ public enum Sizes {
     }
 
     public String getDescription() {
-        String s = null;
-        if (euroSize <= 34 || euroSize >= 40) {
-            s = "Взрослый размер";
-        }
-        return s;
+
+            return "Взрослый размер";
+
     }
 }
