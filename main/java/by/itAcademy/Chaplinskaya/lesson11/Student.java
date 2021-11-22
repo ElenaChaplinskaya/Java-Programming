@@ -15,33 +15,19 @@ public class Student {
         this.course = course;
         this.grades = grades;
         List<Integer> list = getGrades();
-        double num = 0.0;
-        for (Integer integer : list) {
-            num += integer;
-        }
-        setAverage(num / list.size());
-    }
 
 
-    public static void removeStudent(List<Student> students) {
-        for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getAverage() < 3) {
-                students.remove(i);
-                --i;
-            } else {
-                students.get(i).setCourse(students.get(i).getCourse() + 1);
+    public static double average(List <Integer> list){
+            double num = 0.0;
+            for (Integer integer : list) {
+                num += integer;
             }
+            setAverage(num / list.size());
         }
     }
 
-    public static void printStudents(List<Student> students, int course) {
-        for (Student s : students) {
-            if (s.getCourse() == course) {
-                System.out.println(s.getName());
-            }
 
-        }
-    }
+
 
     public String getName() {
         return name;
