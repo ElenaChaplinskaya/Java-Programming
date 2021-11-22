@@ -21,7 +21,7 @@ public class Application {
     }
     public static void removeStudent(List<Student> students) {
         for (int i = 0; i < students.size(); i++) {
-            if (students.get(i).getAverage() < 3) {
+            if (students.get(i).getAverage(students.get(i).grades) < 3) {
                 students.remove(i);
                 --i;
             } else {

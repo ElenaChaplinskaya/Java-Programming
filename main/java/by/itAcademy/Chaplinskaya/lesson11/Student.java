@@ -7,25 +7,22 @@ public class Student {
     String name;
     int course;
     List<Integer> grades;
-    double average;
-
 
     public Student(String name, int course, List<Integer> grades) {
         this.name = name;
         this.course = course;
         this.grades = grades;
-        List<Integer> list = getGrades();
 
+    }
 
-    public static double average(List <Integer> list){
-            double num = 0.0;
+    public double getAverage(List<Integer> grades){
+            List<Integer> list=getGrades();
+        double num = 0.0;
             for (Integer integer : list) {
                 num += integer;
             }
-            setAverage(num / list.size());
+            return (num / list.size());
         }
-    }
-
 
 
 
@@ -53,13 +50,6 @@ public class Student {
         this.grades = grades;
     }
 
-    public double getAverage() {
-        return average;
-    }
-
-    public void setAverage(double average) {
-        this.average = average;
-    }
 
     @Override
     public String toString() {
@@ -67,7 +57,7 @@ public class Student {
                 "name='" + name + '\'' +
                 ", course=" + course +
                 ", grades=" + grades +
-                ", average=" + average +
+                ", average=" +
                 '}';
     }
 }
