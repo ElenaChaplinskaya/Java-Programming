@@ -6,17 +6,7 @@ public abstract class Clothing {
     private double price;
     private String color;
 
-
-    @Override
-    public String toString() {
-        return "Clothing{" +
-                "size=" + size +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                '}';
-    }
-
-    Clothing(int s, double p, String c){
+       Clothing(int s, double p, String c){
         this.size= s;
         this.price=p;
         this.color=c;
@@ -46,5 +36,13 @@ public abstract class Clothing {
         this.color = color;
     }
 
+    @Override
+    public String toString() {
+        return "Clothing{" +
+                "size=" + size +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                '}';
+    }
 
 }

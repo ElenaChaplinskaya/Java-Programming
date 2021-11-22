@@ -37,16 +37,16 @@ public class Application {
         System.out.println(Arrays.toString(newInts));
 
 
-        String sizes1 = Sizes.XS.getDescription(34);
+        String sizes1 = Sizes.XS.getDescription();
         System.out.println(sizes1);
-        String sizes2 = Sizes.XXS.getDescription(32);
+        String sizes2 = Sizes.XXS.getDescription();
         System.out.println(sizes2);
 
         Clothing tshirt = new Tshirt(34, 55.50, "Черный");
         Clothing pants = new Pants(42,100.50,"Белый");
         Clothing skirt = new Skirt(38, 78.50, "Желтый");
         Clothing tie = new Tie(40, 12.50, "Синий");
-        Object clothing[] = new Object[]{tshirt,pants,skirt,tie};
+        Clothing[]clothing = new Clothing[]{tshirt,pants,skirt,tie};
 
         Studio studio = new Studio();
         studio.dressAMan(clothing);

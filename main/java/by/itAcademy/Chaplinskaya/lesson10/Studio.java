@@ -2,17 +2,17 @@ package by.itAcademy.Chaplinskaya.lesson10;
 
 public class Studio {
 
-    public void dressAMan(Object[] clothing) {
+    public static void dressAMan(Clothing[] clothing) {
         for(int i =0; i<clothing.length; i++){
             if(clothing[i] instanceof MensClothing){
-                System.out.println(clothing[i]);
+                System.out.println((MensClothing)clothing[i]);
             }
         }
     }
-    public void dressAWoman(Object[] clothing) {
+    public static void dressAWoman(Clothing []clothing) {
         for(int i =0; i<clothing.length; i++){
             if(clothing[i] instanceof WomensClothing){
-                System.out.println(clothing[i]);
+                System.out.println((WomensClothing)clothing[i]);
             }
         }
     }

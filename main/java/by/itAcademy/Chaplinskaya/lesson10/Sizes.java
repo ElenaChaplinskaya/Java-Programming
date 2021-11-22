@@ -3,7 +3,7 @@ package by.itAcademy.Chaplinskaya.lesson10;
 public enum Sizes {
     XXS(32) {
         @Override
-        public String getDescription(int euroSize) {
+        public String getDescription() {
             String s = null;
             if (euroSize == 32) {
                 s = "Детский размер";
@@ -18,7 +18,7 @@ public enum Sizes {
         this.euroSize = euroSize;
     }
 
-    public String getDescription(int euroSize) {
+    public String getDescription() {
         String s = null;
         if (euroSize <= 34 || euroSize >= 40) {
             s = "Взрослый размер";
