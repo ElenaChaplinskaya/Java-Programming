@@ -15,15 +15,14 @@ public class Student {
 
     }
 
-    public double getAverage(List<Integer> grades){
-            List<Integer> list=getGrades();
+    public double getAverage() {
+        List<Integer> list = getGrades();
         double num = 0.0;
-            for (Integer integer : list) {
-                num += integer;
-            }
-            return (num / list.size());
+        for (Integer integer : list) {
+            num += integer;
         }
-
+        return (num / list.size());
+    }
 
 
     public String getName() {
