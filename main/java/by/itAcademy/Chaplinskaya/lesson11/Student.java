@@ -16,12 +16,11 @@ public class Student {
     }
 
     public double getAverage() {
-        List<Integer> list = getGrades();
         double num = 0.0;
-        for (Integer integer : list) {
+        for (Integer integer : grades) {
             num += integer;
         }
-        return (num / list.size());
+        return (num / grades.size());
     }
 
 
