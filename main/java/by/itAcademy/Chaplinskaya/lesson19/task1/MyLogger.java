@@ -14,7 +14,7 @@ public abstract class MyLogger {
     }
 
     public void notifyManager(String message,int level) {
-        if (this.level>=level) {
+        if (this.level<=level) {
             write(message);
         }
         if (next != null) {

@@ -7,10 +7,6 @@ public class Tracker {
         MyLogger reportError = new SMSToCEO(Levels.ERROR);
         MyLogger reportFatal = new CallToDirector(Levels.FATAL);
 
-//        reportDebug.setNext(reportInfo);
-//        reportInfo.setNext(reportError);
-//        reportError.setNext(reportFatal);
-
         reportFatal.setNext(reportError);
         reportError.setNext(reportInfo);
         reportInfo.setNext(reportDebug);
