@@ -3,7 +3,6 @@ package by.itAcademy.Chaplinskaya.lesson11;
 import java.util.List;
 
 public class Student {
-
     String name;
     int course;
     List<Integer> grades;
@@ -12,7 +11,6 @@ public class Student {
         this.name = name;
         this.course = course;
         this.grades = grades;
-
     }
 
     public double getAverage() {
@@ -22,7 +20,6 @@ public class Student {
         }
         return (num / grades.size());
     }
-
 
     public String getName() {
         return name;
@@ -47,7 +44,6 @@ public class Student {
     public void setGrades(List<Integer> grades) {
         this.grades = grades;
     }
-
 
     @Override
     public String toString() {

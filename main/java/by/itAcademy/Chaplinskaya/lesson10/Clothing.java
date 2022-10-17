@@ -1,7 +1,6 @@
 package by.itAcademy.Chaplinskaya.lesson10;
 
 public abstract class Clothing {
-
     private int size;
     private double price;
     private String color;

@@ -6,7 +6,6 @@ import static by.itAcademy.Chaplinskaya.lesson5.Application.printArray;
 import static by.itAcademy.Chaplinskaya.lesson6.Customer.ageCustomer;
 import static by.itAcademy.Chaplinskaya.lesson2.Application.enterInteger;
 
-
 public class Application {
     public static void main(String[] args) {
 
@@ -46,7 +45,6 @@ public class Application {
             }
         }
         System.out.println(ageCustomer(customer[0]));
-
     }
 
     public static void getTheGreatestNumbers(int[] array) {
@@ -67,6 +65,5 @@ public class Application {
             System.out.print(array1[j][column - 1] + " ");
         }
     }
-
 }
 

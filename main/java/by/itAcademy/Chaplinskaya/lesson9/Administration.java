@@ -5,7 +5,6 @@ public class Administration extends Fabric {
     private int numberOfHoursWorked;
     private double salInHour;
 
-
     public Administration(String fullName, String position, String typeOfSalary, double salInHour, int numberOfHoursWorked) {
         super(fullName, position, typeOfSalary);
         this.numberOfHoursWorked = numberOfHoursWorked;
@@ -31,7 +30,5 @@ public class Administration extends Fabric {
 @Override
     public double getSalaryPerson() {
         return getNumberOfHoursWorked()*getSalInHour();
-
     }
-
 }

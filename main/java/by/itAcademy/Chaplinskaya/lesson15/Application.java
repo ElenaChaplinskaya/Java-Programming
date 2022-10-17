@@ -15,7 +15,6 @@ public class Application {
         JAXBContext jabxContext = JAXBContext.newInstance(Persons.class);
         Unmarshaller unmarshaller = jabxContext.createUnmarshaller();
 
-
         Persons persons = (Persons) unmarshaller.unmarshal(file);
         System.out.println(persons);
 

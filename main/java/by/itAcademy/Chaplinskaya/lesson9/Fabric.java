@@ -1,18 +1,14 @@
 package by.itAcademy.Chaplinskaya.lesson9;
 
 public abstract class Fabric {
-
     private String fullName;
     private String position;
     private String typeOfSalary;
-
-
 
     public Fabric(String fullName, String position, String typeOfSalary) {
         this.fullName = fullName;
         this.position = position;
         this.typeOfSalary = typeOfSalary;
-
     }
 
     public String getFullName() {
@@ -40,6 +36,5 @@ public abstract class Fabric {
     }
 
     public abstract double getSalaryPerson();
-
 
 }

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 public class Application {
     public static void main(String[] args) {
 
@@ -17,7 +16,6 @@ public class Application {
 
         removeStudent(students);
         printStudents(students, 2);
-
     }
     public static void removeStudent(List<Student> students) {
         for (int i = 0; i < students.size(); i++) {
@@ -35,7 +33,6 @@ public class Application {
             if (s.getCourse() == course) {
                 System.out.println(s.getName());
             }
-
         }
     }
 }

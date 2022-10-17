@@ -2,7 +2,6 @@ package by.itAcademy.Chaplinskaya.lesson12;
 
 import java.util.*;
 
-
 public class App {
 
     public static void main(String[] args) {

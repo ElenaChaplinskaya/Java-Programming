@@ -1,7 +1,6 @@
 package by.itAcademy.Chaplinskaya.lesson13;
 
 import java.util.Map;
-
 public class LogIn {
 
     public static boolean logIn(String login, String pass, Map<String, String> users) throws PassException {

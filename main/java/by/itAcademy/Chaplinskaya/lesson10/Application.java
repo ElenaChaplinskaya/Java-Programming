@@ -11,7 +11,6 @@ public class Application {
         Test<String> test = new Test<>();
         Test<Integer> test1 = new Test<>();
 
-
         String[] newArray = test.filter(array, new Filter<String>() {
             @Override
             public boolean apply(String str) {

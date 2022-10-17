@@ -3,7 +3,6 @@ package by.itAcademy.Chaplinskaya.lesson15;
 import javax.xml.bind.annotation.XmlElement;
 
 public class Person {
-
     private int id;
     private String name;
     private int age;
