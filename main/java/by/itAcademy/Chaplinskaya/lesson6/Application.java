@@ -55,7 +55,6 @@ public class Application {
             }
         }
     }
-
     public static void getLineAndColumn(int[][] array1, int line, int column) {
         for (int i = 0; i < array1.length + 1; i++) {
             System.out.print(array1[line - 1][i] + " ");

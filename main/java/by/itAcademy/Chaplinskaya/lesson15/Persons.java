@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 @XmlRootElement(name ="persons")
 public class Persons {
-
     private ArrayList<Person> person;
 
     @XmlElement(name ="person")

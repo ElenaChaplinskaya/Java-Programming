@@ -5,7 +5,6 @@ public class MyThread extends Thread {
     public MyThread(Object obj) {
         this.obj = obj;
     }
-
     public void run() {
         synchronized (obj) {
             System.out.println(MyThread.currentThread().getName());

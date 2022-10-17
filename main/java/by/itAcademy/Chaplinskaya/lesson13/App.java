@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static by.itAcademy.Chaplinskaya.lesson13.LogIn.logIn;
-
 public class App {
     public static void main(String[] args) {
 

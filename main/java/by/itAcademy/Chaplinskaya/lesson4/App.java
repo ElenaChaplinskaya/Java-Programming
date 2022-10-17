@@ -19,7 +19,6 @@ public class App {
         subsequence();
         System.out.println(factorial(number));
     }
-
     public static int getSumNumber(int num) {
         int sum = num;
         if (num >= 1) {
@@ -44,7 +43,6 @@ public class App {
         } else {
             return false;
         }
-
     }
 
     public static String evenNumber(int num) {

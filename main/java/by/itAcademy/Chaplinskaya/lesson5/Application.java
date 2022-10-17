@@ -98,7 +98,6 @@ public class Application {
         }
         return max;
     }
-
 }
 
 

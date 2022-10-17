@@ -37,9 +37,7 @@ public class Application {
         int random = enterInteger();
         System.out.println(random(random));
 
-
     }
-
     public static int enterInteger() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextInt();

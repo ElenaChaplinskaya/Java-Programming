@@ -18,7 +18,6 @@ public class Application {
         String str2 = "Кажется, никогда такого не было, но вот опять";
         System.out.println(searchAndCountOfSymbol(str2));
         newText(str2);
-
     }
 
     public static void printSymbol(String x) {

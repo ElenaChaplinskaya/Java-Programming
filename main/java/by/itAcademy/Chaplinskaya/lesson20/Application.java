@@ -2,7 +2,6 @@ package by.itAcademy.Chaplinskaya.lesson20;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
 public class Application {
 
     public static void main(String[] args) {

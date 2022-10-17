@@ -6,9 +6,7 @@ public class AppExtra {
     public static void main(String[] args) {
         comparison(10, 5);
         division();
-
     }
-
     public static void comparison(int number1, int number2) {
         System.out.print("Введите число: ");
         Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,6 @@ package by.itAcademy.Chaplinskaya.lesson14;
 
 import java.io.File;
 import java.io.IOException;
-
 public class ExtraTask {
     public static void main(String[] args) throws IOException {
 

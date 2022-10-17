@@ -3,7 +3,6 @@ package by.itAcademy.Chaplinskaya.lesson16;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-
 public class App {
     public static void main(String[] args) {
 

@@ -1,7 +1,6 @@
 package by.itAcademy.Chaplinskaya.lesson9;
 
 public class Administration extends Fabric {
-
     private int numberOfHoursWorked;
     private double salInHour;
 
@@ -14,15 +13,12 @@ public class Administration extends Fabric {
     public int getNumberOfHoursWorked() {
         return numberOfHoursWorked;
     }
-
     public void setNumberOfHoursWorked(int numberOfHoursWorked) {
         this.numberOfHoursWorked = numberOfHoursWorked;
     }
-
     public double getSalInHour() {
         return salInHour;
     }
-
     public void setSalInHour(double salInHour) {
         this.salInHour = salInHour;
     }
